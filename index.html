@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>FP Bookshelf</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&family=PT+Serif&family=Playfair+Display&display=swap'); </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ol class="nav">
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+          </ol>
+        </nav>
+      </header>
+      <h1>The Library</h1>
+      <section class="top">
+        <section class="favorites"></section>
+        <section class="dropsection">
+          <select name="sorter" class="dropdown">
+            <option>---Select an Option to Sort---</option>
+            <!--PUSH HERE IF TIME: CREATE ASCENDING/DESCENDING BUTTON-->
+            <option value="title-descending">Title (A-Z)</option>
+            <!-- <option value="title-ascending">Title (Z-A)</option> -->
+            <option value="author-descending">Author (A-Z)</option>
+            <!-- <option value="author-descending">Author (Z-A)</option> -->
+            <option value="topicsnumber">Number of Subjects</option>
+          </select>
+        </section>
+        <section class="search">
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search"
+            name="Search"
+          />
+          <button class="search-icon">
+            <i class="add-item material-icons">search</i>
+          </button>
+        </section>
+      </section>
+      <section class="main-body">
+        <aside class="aside">
+          <p class="add">Add a Book</p>
+          <input class="input-title" type="text" placeholder="Title" />
+          <input
+            class="input-author"
+            type="text"
+            placeholder="Author (Last, First)"
+          />
+          <input class="input-subjects" type="text" placeholder="Subjects" />
+          <input
+            class="input-language"
+            type="text"
+            placeholder="Language"
+            maxlength="2"
+          />
+          <button class="add-button">Add</button>
+        </aside>
+        <section class="bookshelf"></section>
+      </section>
+    </main>
+    <script src="/js/book-data.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

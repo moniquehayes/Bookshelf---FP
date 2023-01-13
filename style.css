@@ -1,0 +1,213 @@
+body {
+    background-color: lightslategray;
+}
+
+.main-body {
+    width: 100vw;
+    display: flex;
+}
+
+.aside {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/3952073/pexels-photo-3952073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+aside>input {
+    margin: 7px;
+    height: 3vh;
+    width: 15vw;
+    border: 1px solid black;
+}
+
+.add {
+    text-align: center;
+    background-color: rgb(223, 226, 229);
+    padding: 8px;
+    width: 10vw;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid black;
+}
+
+.add-button {
+    width: 12vh;
+    margin: 7px;
+    background-color: rgb(223, 226, 229);
+    border-radius: 7px;
+}
+
+.bookshelf {
+    background-color: rgb(29, 95, 135);
+    width: 82vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30vw;
+    height: 50vh;
+    background-color: rgb(151, 160, 169);
+    border-radius: 25px;
+    margin: 3vw;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Bitter', serif;
+}
+select {
+    font-family: 'Bitter', serif;
+}
+
+.fav-button {
+    position: relative;
+    top: .25vh;
+    left: 25vw;
+    width: 4vw;
+    border-radius: 7px;
+    box-shadow: none;
+    background-color: rgb(223, 226, 229)
+}
+
+.favorites {
+    display: flex;
+    width: 33vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.favcounter {
+    margin: 5px;
+}
+
+.favcounter-button {
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.addcomment-button {
+    background-color: rgb(223, 226, 229);
+    border-radius: 7px;
+    width: 9vw;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+h1 {
+    text-align: left;
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+}
+
+.dropdown {
+    text-align: center;
+    margin: 7px;
+}
+
+.dropsection {
+    text-align: center;
+    width: 33vw;
+}
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    width: 95vw;
+    height: 1.5vh;
+    font-family: 'PT Serif', serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(15, 68, 101);
+    font-size: .95em;
+}
+
+li {
+    margin: 2px 30px;
+    font-size: 20px;
+}
+
+.search {
+    width: 33vw;
+    text-align: right;
+}
+
+.search-icon {
+    border-radius: 7px;
+}
+
+.booktitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    height: 8vh;
+    margin-bottom: 4px;
+    overflow: scroll;
+}
+
+.bookauthor {
+    font-family: 'Playfair Display', serif;
+    height: 8vh;
+    margin: 0px;
+    overflow: scroll;
+}
+
+.booksubjects {
+    font-family: 'PT Serif', serif;
+    height: 8vh;
+    font-size: .85em;
+    margin-top: 0px;
+    overflow: scroll;
+}
+
+.booklanguage {
+    font-family: 'PT Serif', serif;
+    height: 3vh;
+    font-size: .8em;
+}
+
+.comment-section {
+    font-family: 'PT Serif', serif;
+    height: 12vh;
+    background-color: rgb(174, 177, 180);
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    overflow: scroll;
+}
+.comment-header {
+    text-decoration: underline;
+}
+.commentbox {
+    width: 27vw;
+    height: 5vh;
+}
+
+.comm-list-element {
+    font-size: .9em;
+}
+
+.previous-comments {
+    list-style-type: none;
+    margin: 0px;
+    overflow: scroll;
+}
+
+.previous-comments li:before {
+    content: '\2014';
+    margin-left: -20px;
+}
+
+.submitcomment-button {
+    width: 5vw;
+    border-radius: 5px;
+}
