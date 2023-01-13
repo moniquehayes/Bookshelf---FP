@@ -30,7 +30,6 @@ submitButton.addEventListener('click', login, false);
 const registerBody = document.querySelector(".register");
 
 const createAccount = () => {
-//   const newUserObj = {};
   const newUser = document.querySelector(".newuser");
     const username = newUser.value;
   const newPass = document.querySelector(".newpassword");
@@ -44,10 +43,6 @@ const createAccount = () => {
   registerBody.append(createdMessage);
 
   createAccountBtn.setAttribute("disabled", "true");
-
-//   accounts.push(newUserObj);
-
-  console.log(accounts);
 };
 
 const createAccountBtn = document.querySelector(".create-account");
